@@ -9,8 +9,7 @@
   };
 
   NewsStorySummaryList.prototype.createNewsStorySummary = function(summary) {
-    newsStorySummary = new NewsStorySummary(summary);
-    this.getNewsStorySummaries().push(newsStorySummary);
+    this.getNewsStorySummaries().push(new NewsStorySummary(summary));
   };
 
   exports.NewsStorySummaryList = NewsStorySummaryList;
