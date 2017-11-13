@@ -1,8 +1,28 @@
-<h1>Here are the Guardian headlines for today</h1>
+<h1>Here are the Guardian politics headlines for today</h1>
 <div id="app"></div>
+<div id="news-story-summary"></div>
 
 <script src="./src/politics.js"></script>
 <script src="./src/news-summary-controller.js"></script>
 <script src="./src/news-story-summary.js"></script>
 <script src="./src/news-story-summary-list.js"></script>
 <script src="./src/news-story-summary-list-view.js"></script>
+
+
+<!-- <div id="full-note"></div>
+
+  <form method="POST" action="/notes/new">
+    <input id="text" type=submit>
+    <textarea id="note-text" rows="4" cols="50">
+    </textarea>
+  </form> -->
+
+  <!-- NoteController.prototype.submitListener = function() {
+    form = document.getElementById("text");
+    form.addEventListener("click", function(event) {
+      event.preventDefault();
+      noteContents = document.getElementById("note-text").value;
+      noteController._noteList.createNote(noteContents);
+      noteController.getAndUseHTML();
+    });
+  }; -->

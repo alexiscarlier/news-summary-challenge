@@ -12,7 +12,7 @@
     htmlString = "<ul>";
     var newsStoryArray = this.getNewsStorySummaryList().getNewsStorySummaries().map(function(story, index) {
       storySummary = story.getSummary();
-      return '<li><div><a href="#notes/' + index + '">' + storySummary + "</a></div></li>";
+      return "<li><div><a href=\"#news-summary/" + index + "\">" + storySummary + "</a></div></li>";
     });
     htmlString += newsStoryArray.join("") + "</ul>";
     return htmlString;
